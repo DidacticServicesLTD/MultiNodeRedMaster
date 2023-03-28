@@ -7,6 +7,10 @@ It could be more optimal, but is designed to serve a specific purpose of group e
 
 ---
 
+## Requirements
+Node/npm must be globally installed -> https://nodejs.org/en/download
+
+
 ## To use
 
 1. Clone the Repo
@@ -20,5 +24,5 @@ It could be more optimal, but is designed to serve a specific purpose of group e
 ```MAC_RUN_ME_TO_LAUNCH_EVERYTHING.sh``` or ``` WINDOWS_RUN_ME_TO_LAUNCH_EVERYTHING.sh```
 
 
-## INFO
+## Info
 the data_x folders contain a package.json file that lists which pallets should be installed, in each instance of node-red 
