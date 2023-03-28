@@ -18,15 +18,15 @@ Node/npm must be globally installed -> https://nodejs.org/en/download
 
 2. Run the install script (ONCE!)
 
-```MAC_RUN_ME_TO_INSTALL_EVERYTHING.sh``` or ``` WINDOWS_RUN_ME_TO_INSTALL_EVERYTHING.sh```
+```MAC_RUN_ME_TO_INSTALL_EVERYTHING.sh``` or ``` WINDOWS_RUN_ME_TO_INSTALL_EVERYTHING.bat```
 
 3. Run the Launch file
 
-```MAC_RUN_ME_TO_LAUNCH_EVERYTHING.sh``` or ``` WINDOWS_RUN_ME_TO_LAUNCH_EVERYTHING.sh```
+```MAC_RUN_ME_TO_LAUNCH_EVERYTHING.sh``` or ``` WINDOWS_RUN_ME_TO_LAUNCH_EVERYTHING.bat```
 
 4. Tidy Up (Optional)
 
-```MAC_RUN_ME_TO_UNINSTALL_EVERYTHING.sh``` or ``` WINDOWS_RUN_ME_TO_UNINSTALL_EVERYTHING.sh```
+```MAC_RUN_ME_TO_UNINSTALL_EVERYTHING.sh``` or ``` WINDOWS_RUN_ME_TO_UNINSTALL_EVERYTHING.bat```
 
 
 ---
