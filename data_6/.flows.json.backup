@@ -1,0 +1,357 @@
+[
+    {
+        "id": "e176be9e547b7705",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "861dd3d0deb6c225",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "2d897dfbb9a0f91e",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "c8e9d0896b13d954",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "861dd3d0deb6c225",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1e9acc4389baf367",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://172.21.3.1:4840",
+        "secpol": "None",
+        "secmode": "None",
+        "none": false,
+        "login": false,
+        "usercert": false,
+        "usercertificate": "",
+        "userprivatekey": ""
+    },
+    {
+        "id": "3273321f9d5c8b12",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://172.21.1.1:4840",
+        "secpol": "None",
+        "secmode": "None",
+        "none": false,
+        "login": false,
+        "usercert": false,
+        "usercertificate": "",
+        "userprivatekey": ""
+    },
+    {
+        "id": "a7e9cafe39aafc89",
+        "type": "inject",
+        "z": "e176be9e547b7705",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 290,
+        "y": 180,
+        "wires": [
+            [
+                "9f80c292cbc88775",
+                "d226c13aac4b6040"
+            ]
+        ]
+    },
+    {
+        "id": "9f80c292cbc88775",
+        "type": "OpcUa-Item",
+        "z": "e176be9e547b7705",
+        "item": "ns=3;s=\"xBG5\"",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "",
+        "x": 520,
+        "y": 140,
+        "wires": [
+            [
+                "4c6b90a212eeb697"
+            ]
+        ]
+    },
+    {
+        "id": "4c6b90a212eeb697",
+        "type": "OpcUa-Client",
+        "z": "e176be9e547b7705",
+        "endpoint": "3273321f9d5c8b12",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "folderName4PKI": "",
+        "name": "",
+        "x": 720,
+        "y": 240,
+        "wires": [
+            [
+                "2e3a54d753019d5d",
+                "f52b4c3eeadb1b03"
+            ]
+        ]
+    },
+    {
+        "id": "2e3a54d753019d5d",
+        "type": "debug",
+        "z": "e176be9e547b7705",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 910,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "f52b4c3eeadb1b03",
+        "type": "ui_led",
+        "z": "e176be9e547b7705",
+        "order": 0,
+        "group": "c8e9d0896b13d954",
+        "width": 0,
+        "height": 0,
+        "label": "xBG5",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 990,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "d226c13aac4b6040",
+        "type": "OpcUa-Item",
+        "z": "e176be9e547b7705",
+        "item": "ns=3;s=\"xBG6\"",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "",
+        "x": 480,
+        "y": 420,
+        "wires": [
+            [
+                "08229698a5c6dfca"
+            ]
+        ]
+    },
+    {
+        "id": "08229698a5c6dfca",
+        "type": "OpcUa-Client",
+        "z": "e176be9e547b7705",
+        "endpoint": "3273321f9d5c8b12",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "folderName4PKI": "",
+        "name": "",
+        "x": 680,
+        "y": 520,
+        "wires": [
+            [
+                "93d868fa4239fe1d",
+                "f612b199e7eb78e0"
+            ]
+        ]
+    },
+    {
+        "id": "93d868fa4239fe1d",
+        "type": "debug",
+        "z": "e176be9e547b7705",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 870,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "f612b199e7eb78e0",
+        "type": "ui_led",
+        "z": "e176be9e547b7705",
+        "order": 0,
+        "group": "c8e9d0896b13d954",
+        "width": 0,
+        "height": 0,
+        "label": "xBG6",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 950,
+        "y": 540,
+        "wires": []
+    }
+]

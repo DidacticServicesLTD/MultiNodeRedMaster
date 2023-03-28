@@ -1,0 +1,27 @@
+{
+  "name": "multi-node-red-master",
+  "version": "2.0.3",
+  "description": "Test environment for developing Node-RED flows",
+  "main": "node_modules/node-red/red.js",
+  "keywords": [
+    "node-red"
+  ],
+  "author": "Calum Knott",
+  "license": "MIT",
+  "scripts": {
+  },
+  "dependencies": {
+    "node-red": "*",
+    "node-red-admin": "*"
+  },
+  "engines": {
+    "node": ">=10.6"
+  },
+  "browserslist": [
+    "> 0.5%",
+    "maintained node versions",
+    "last 2 versions",
+    "not dead",
+    "not ie < 11"
+  ]
+}

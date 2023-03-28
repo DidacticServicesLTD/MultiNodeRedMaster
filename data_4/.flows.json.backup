@@ -1,0 +1,291 @@
+[
+    {
+        "id": "9d0bedb53381a585",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "0420305044f2dd43",
+        "type": "ui_tab",
+        "name": "Home ",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5b354a652ba820eb",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "94920d11291d1576",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "0420305044f2dd43",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b4909c6d6d4740e8",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://172.21.2.1:4840",
+        "secpol": "None",
+        "secmode": "None",
+        "none": false,
+        "login": false,
+        "usercert": false,
+        "usercertificate": "",
+        "userprivatekey": ""
+    },
+    {
+        "id": "77214982be456480",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://172.21.6.1:4840",
+        "secpol": "None",
+        "secmode": "None",
+        "none": false,
+        "login": false,
+        "usercert": false,
+        "usercertificate": "",
+        "userprivatekey": ""
+    },
+    {
+        "id": "202409d8c5d31980",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp:172.21.2.1:4840",
+        "secpol": "None",
+        "secmode": "None",
+        "none": false,
+        "login": false,
+        "usercert": false,
+        "usercertificate": "",
+        "userprivatekey": ""
+    },
+    {
+        "id": "c3989c70177f8dfe",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://172.21.1.1:4840",
+        "secpol": "None",
+        "secmode": "None",
+        "none": false,
+        "login": false,
+        "usercert": false,
+        "usercertificate": "",
+        "userprivatekey": ""
+    },
+    {
+        "id": "ea291f84a0dbe9c2",
+        "type": "inject",
+        "z": "9d0bedb53381a585",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 220,
+        "wires": [
+            [
+                "8d5b3ee9c9df0d73"
+            ]
+        ]
+    },
+    {
+        "id": "8d5b3ee9c9df0d73",
+        "type": "OpcUa-Item",
+        "z": "9d0bedb53381a585",
+        "item": "ns=3;s=\"xBG5\"",
+        "datatype": "Boolean",
+        "value": "",
+        "name": "",
+        "x": 380,
+        "y": 160,
+        "wires": [
+            [
+                "f11041f7996a643e"
+            ]
+        ]
+    },
+    {
+        "id": "f11041f7996a643e",
+        "type": "OpcUa-Client",
+        "z": "9d0bedb53381a585",
+        "endpoint": "c3989c70177f8dfe",
+        "action": "read",
+        "deadbandtype": "a",
+        "deadbandvalue": 1,
+        "time": 10,
+        "timeUnit": "s",
+        "certificate": "n",
+        "localfile": "",
+        "localkeyfile": "",
+        "securitymode": "None",
+        "securitypolicy": "None",
+        "folderName4PKI": "",
+        "name": "",
+        "x": 600,
+        "y": 160,
+        "wires": [
+            [
+                "85089aa27cab5554",
+                "31914c387033670b"
+            ]
+        ]
+    },
+    {
+        "id": "85089aa27cab5554",
+        "type": "debug",
+        "z": "9d0bedb53381a585",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 810,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "31914c387033670b",
+        "type": "ui_led",
+        "z": "9d0bedb53381a585",
+        "order": 0,
+        "group": "ui_group",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "red",
+                "value": false,
+                "valueType": "bool"
+            },
+            {
+                "color": "green",
+                "value": true,
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 810,
+        "y": 300,
+        "wires": []
+    }
+]
