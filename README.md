@@ -10,6 +10,7 @@ It could be more optimal, but is designed to serve a specific purpose of group e
 ## Requirements
 Node/npm must be globally installed -> https://nodejs.org/en/download
 
+--
 
 ## To use
 
@@ -23,6 +24,12 @@ Node/npm must be globally installed -> https://nodejs.org/en/download
 
 ```MAC_RUN_ME_TO_LAUNCH_EVERYTHING.sh``` or ``` WINDOWS_RUN_ME_TO_LAUNCH_EVERYTHING.sh```
 
+4. Tidy Up (Optional)
+
+```MAC_RUN_ME_TO_UNINSTALL_EVERYTHING.sh``` or ``` WINDOWS_RUN_ME_TO_UNINSTALL_EVERYTHING.sh```
+
+
+---
 
 ## Info
 the data_x folders contain a package.json file that lists which pallets should be installed, in each instance of node-red 

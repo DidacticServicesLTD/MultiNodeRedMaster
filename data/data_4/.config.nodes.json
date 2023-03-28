@@ -1,10 +1,21 @@
 {
     "node-red": {
         "name": "node-red",
-        "version": "2.2.2",
+        "version": "3.0.2-git",
         "local": false,
         "user": false,
         "nodes": {
+            "junction": {
+                "name": "junction",
+                "types": [
+                    "junction"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "/Volumes/Programming/2023/NodeRedPortable/node_modules/@node-red/nodes/core/common/05-junction.js"
+            },
             "inject": {
                 "name": "inject",
                 "types": [
@@ -420,7 +431,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-contrib-opcua",
-                "file": "/Volumes/Programming/2023/NodeRedPortable/data_4/node_modules/node-red-contrib-opcua/opcua/101-opcuaitem.js"
+                "file": "/Volumes/Programming/2023/NodeRedPortable/data/data_4/node_modules/node-red-contrib-opcua/opcua/101-opcuaitem.js"
             },
             "OpcUa-Client": {
                 "name": "OpcUa-Client",
@@ -431,7 +442,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-contrib-opcua",
-                "file": "/Volumes/Programming/2023/NodeRedPortable/data_4/node_modules/node-red-contrib-opcua/opcua/102-opcuaclient.js"
+                "file": "/Volumes/Programming/2023/NodeRedPortable/data/data_4/node_modules/node-red-contrib-opcua/opcua/102-opcuaclient.js"
             },
             "OpcUa-Browser": {
                 "name": "OpcUa-Browser",
@@ -442,7 +453,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-contrib-opcua",
-                "file": "/Volumes/Programming/2023/NodeRedPortable/data_4/node_modules/node-red-contrib-opcua/opcua/103-opcuabrowser.js"
+                "file": "/Volumes/Programming/2023/NodeRedPortable/data/data_4/node_modules/node-red-contrib-opcua/opcua/103-opcuabrowser.js"
             },
             "OpcUa-Server": {
                 "name": "OpcUa-Server",
@@ -453,7 +464,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-contrib-opcua",
-                "file": "/Volumes/Programming/2023/NodeRedPortable/data_4/node_modules/node-red-contrib-opcua/opcua/104-opcuaserver.js"
+                "file": "/Volumes/Programming/2023/NodeRedPortable/data/data_4/node_modules/node-red-contrib-opcua/opcua/104-opcuaserver.js"
             },
             "OpcUa-Endpoint": {
                 "name": "OpcUa-Endpoint",
@@ -464,7 +475,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-contrib-opcua",
-                "file": "/Volumes/Programming/2023/NodeRedPortable/data_4/node_modules/node-red-contrib-opcua/opcua/105-opcuaendpoint.js"
+                "file": "/Volumes/Programming/2023/NodeRedPortable/data/data_4/node_modules/node-red-contrib-opcua/opcua/105-opcuaendpoint.js"
             },
             "OpcUa-Event": {
                 "name": "OpcUa-Event",
@@ -475,7 +486,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-contrib-opcua",
-                "file": "/Volumes/Programming/2023/NodeRedPortable/data_4/node_modules/node-red-contrib-opcua/opcua/106-opcuaevent.js"
+                "file": "/Volumes/Programming/2023/NodeRedPortable/data/data_4/node_modules/node-red-contrib-opcua/opcua/106-opcuaevent.js"
             },
             "OpcUa-Method": {
                 "name": "OpcUa-Method",
@@ -486,7 +497,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-contrib-opcua",
-                "file": "/Volumes/Programming/2023/NodeRedPortable/data_4/node_modules/node-red-contrib-opcua/opcua/107-opcuamethod.js"
+                "file": "/Volumes/Programming/2023/NodeRedPortable/data/data_4/node_modules/node-red-contrib-opcua/opcua/107-opcuamethod.js"
             }
         }
     },
@@ -505,7 +516,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-contrib-ui-led",
-                "file": "/Volumes/Programming/2023/NodeRedPortable/data_4/node_modules/node-red-contrib-ui-led/dist/nodes/ui_led/ui_led.js"
+                "file": "/Volumes/Programming/2023/NodeRedPortable/data/data_4/node_modules/node-red-contrib-ui-led/dist/nodes/ui_led/ui_led.js"
             }
         }
     },
@@ -524,7 +535,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/Volumes/Programming/2023/NodeRedPortable/data_4/node_modules/node-red-dashboard/nodes/ui_base.js"
+                "file": "/Volumes/Programming/2023/NodeRedPortable/data/data_4/node_modules/node-red-dashboard/nodes/ui_base.js"
             },
             "ui_button": {
                 "name": "ui_button",
@@ -535,7 +546,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/Volumes/Programming/2023/NodeRedPortable/data_4/node_modules/node-red-dashboard/nodes/ui_button.js"
+                "file": "/Volumes/Programming/2023/NodeRedPortable/data/data_4/node_modules/node-red-dashboard/nodes/ui_button.js"
             },
             "ui_dropdown": {
                 "name": "ui_dropdown",
@@ -546,7 +557,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/Volumes/Programming/2023/NodeRedPortable/data_4/node_modules/node-red-dashboard/nodes/ui_dropdown.js"
+                "file": "/Volumes/Programming/2023/NodeRedPortable/data/data_4/node_modules/node-red-dashboard/nodes/ui_dropdown.js"
             },
             "ui_switch": {
                 "name": "ui_switch",
@@ -557,7 +568,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/Volumes/Programming/2023/NodeRedPortable/data_4/node_modules/node-red-dashboard/nodes/ui_switch.js"
+                "file": "/Volumes/Programming/2023/NodeRedPortable/data/data_4/node_modules/node-red-dashboard/nodes/ui_switch.js"
             },
             "ui_slider": {
                 "name": "ui_slider",
@@ -568,7 +579,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/Volumes/Programming/2023/NodeRedPortable/data_4/node_modules/node-red-dashboard/nodes/ui_slider.js"
+                "file": "/Volumes/Programming/2023/NodeRedPortable/data/data_4/node_modules/node-red-dashboard/nodes/ui_slider.js"
             },
             "ui_numeric": {
                 "name": "ui_numeric",
@@ -579,7 +590,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/Volumes/Programming/2023/NodeRedPortable/data_4/node_modules/node-red-dashboard/nodes/ui_numeric.js"
+                "file": "/Volumes/Programming/2023/NodeRedPortable/data/data_4/node_modules/node-red-dashboard/nodes/ui_numeric.js"
             },
             "ui_text_input": {
                 "name": "ui_text_input",
@@ -590,7 +601,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/Volumes/Programming/2023/NodeRedPortable/data_4/node_modules/node-red-dashboard/nodes/ui_text_input.js"
+                "file": "/Volumes/Programming/2023/NodeRedPortable/data/data_4/node_modules/node-red-dashboard/nodes/ui_text_input.js"
             },
             "ui_date_picker": {
                 "name": "ui_date_picker",
@@ -601,7 +612,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/Volumes/Programming/2023/NodeRedPortable/data_4/node_modules/node-red-dashboard/nodes/ui_date_picker.js"
+                "file": "/Volumes/Programming/2023/NodeRedPortable/data/data_4/node_modules/node-red-dashboard/nodes/ui_date_picker.js"
             },
             "ui_colour_picker": {
                 "name": "ui_colour_picker",
@@ -612,7 +623,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/Volumes/Programming/2023/NodeRedPortable/data_4/node_modules/node-red-dashboard/nodes/ui_colour_picker.js"
+                "file": "/Volumes/Programming/2023/NodeRedPortable/data/data_4/node_modules/node-red-dashboard/nodes/ui_colour_picker.js"
             },
             "ui_form": {
                 "name": "ui_form",
@@ -623,7 +634,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/Volumes/Programming/2023/NodeRedPortable/data_4/node_modules/node-red-dashboard/nodes/ui_form.js"
+                "file": "/Volumes/Programming/2023/NodeRedPortable/data/data_4/node_modules/node-red-dashboard/nodes/ui_form.js"
             },
             "ui_text": {
                 "name": "ui_text",
@@ -634,7 +645,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/Volumes/Programming/2023/NodeRedPortable/data_4/node_modules/node-red-dashboard/nodes/ui_text.js"
+                "file": "/Volumes/Programming/2023/NodeRedPortable/data/data_4/node_modules/node-red-dashboard/nodes/ui_text.js"
             },
             "ui_gauge": {
                 "name": "ui_gauge",
@@ -645,7 +656,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/Volumes/Programming/2023/NodeRedPortable/data_4/node_modules/node-red-dashboard/nodes/ui_gauge.js"
+                "file": "/Volumes/Programming/2023/NodeRedPortable/data/data_4/node_modules/node-red-dashboard/nodes/ui_gauge.js"
             },
             "ui_chart": {
                 "name": "ui_chart",
@@ -656,7 +667,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/Volumes/Programming/2023/NodeRedPortable/data_4/node_modules/node-red-dashboard/nodes/ui_chart.js"
+                "file": "/Volumes/Programming/2023/NodeRedPortable/data/data_4/node_modules/node-red-dashboard/nodes/ui_chart.js"
             },
             "ui_audio": {
                 "name": "ui_audio",
@@ -667,7 +678,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/Volumes/Programming/2023/NodeRedPortable/data_4/node_modules/node-red-dashboard/nodes/ui_audio.js"
+                "file": "/Volumes/Programming/2023/NodeRedPortable/data/data_4/node_modules/node-red-dashboard/nodes/ui_audio.js"
             },
             "ui_toast": {
                 "name": "ui_toast",
@@ -678,7 +689,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/Volumes/Programming/2023/NodeRedPortable/data_4/node_modules/node-red-dashboard/nodes/ui_toast.js"
+                "file": "/Volumes/Programming/2023/NodeRedPortable/data/data_4/node_modules/node-red-dashboard/nodes/ui_toast.js"
             },
             "ui_ui_control": {
                 "name": "ui_ui_control",
@@ -689,7 +700,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/Volumes/Programming/2023/NodeRedPortable/data_4/node_modules/node-red-dashboard/nodes/ui_ui_control.js"
+                "file": "/Volumes/Programming/2023/NodeRedPortable/data/data_4/node_modules/node-red-dashboard/nodes/ui_ui_control.js"
             },
             "ui_template": {
                 "name": "ui_template",
@@ -700,7 +711,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/Volumes/Programming/2023/NodeRedPortable/data_4/node_modules/node-red-dashboard/nodes/ui_template.js"
+                "file": "/Volumes/Programming/2023/NodeRedPortable/data/data_4/node_modules/node-red-dashboard/nodes/ui_template.js"
             },
             "ui_link": {
                 "name": "ui_link",
@@ -711,7 +722,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/Volumes/Programming/2023/NodeRedPortable/data_4/node_modules/node-red-dashboard/nodes/ui_link.js"
+                "file": "/Volumes/Programming/2023/NodeRedPortable/data/data_4/node_modules/node-red-dashboard/nodes/ui_link.js"
             },
             "ui_tab": {
                 "name": "ui_tab",
@@ -722,7 +733,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/Volumes/Programming/2023/NodeRedPortable/data_4/node_modules/node-red-dashboard/nodes/ui_tab.js"
+                "file": "/Volumes/Programming/2023/NodeRedPortable/data/data_4/node_modules/node-red-dashboard/nodes/ui_tab.js"
             },
             "ui_group": {
                 "name": "ui_group",
@@ -733,7 +744,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/Volumes/Programming/2023/NodeRedPortable/data_4/node_modules/node-red-dashboard/nodes/ui_group.js"
+                "file": "/Volumes/Programming/2023/NodeRedPortable/data/data_4/node_modules/node-red-dashboard/nodes/ui_group.js"
             },
             "ui_spacer": {
                 "name": "ui_spacer",
@@ -744,7 +755,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "/Volumes/Programming/2023/NodeRedPortable/data_4/node_modules/node-red-dashboard/nodes/ui_spacer.js"
+                "file": "/Volumes/Programming/2023/NodeRedPortable/data/data_4/node_modules/node-red-dashboard/nodes/ui_spacer.js"
             }
         }
     }
