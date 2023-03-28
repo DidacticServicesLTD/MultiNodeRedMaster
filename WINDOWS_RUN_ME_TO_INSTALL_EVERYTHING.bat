@@ -1,3 +1,4 @@
+start "node-red-install" npm install
 start "node-red-0-install" /D data\data_0 npm install
 start "node-red-1-install" /D data\data_1 npm install
 start "node-red-2-install" /D data\data_2 npm install
